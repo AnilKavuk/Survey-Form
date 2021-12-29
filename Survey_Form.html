@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        *{
+            resize: none;
+            text-align: left;
+            
+        }
+
+        body{
+            background-color: green;
+            text-align: center;
+           
+           
+        }
+
+
+        article{
+          
+            display: inline-block;
+            padding: 20px;
+            font-size:25px;
+            color:black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: auto;
+            background:white; /* only for demonstration, should be removed */
+            margin-left: 0;
+            padding-left: 0;
+            padding-right: 0;
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align:left;
+        }
+
+        footer{
+            background-color:green;
+            padding: 10px;
+            text-align: center;
+            color:white;
+            font-size:50px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+        }
+        
+        .pFooter{
+            display:inline-block;
+                margin: 0;
+            }
+
+        @media(max-width: 2400px){
+            article{
+                width: 800px;
+                text-align: center;
+                height: auto;
+            }
+
+          
+        }
+
+        #fname{
+            
+            border-radius: 30px;
+            
+        }
+
+        #lnname{
+            border-radius: 30px;
+        }
+       
+        #age{
+            margin-left: 85px; 
+            border-radius: 30px;
+        }
+        
+        #role{
+            margin-left: 55px; 
+            border-radius: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #yes{
+            margin-left: 50px;
+        }
+
+        #no{
+            margin-left: 60px;
+        }
+        
+        #maybe{
+            margin-left: 15px;
+        }
+
+        #button{
+            margin-left:50px;
+            border-radius: 30px;
+            background-color:green;
+            color:whitesmoke;
+            text-align: center;
+        }
+
+        #comment{
+            margin-left:50px;
+            resize: none;
+        }
+
+        .header-div{
+
+            padding-left:200px;
+            font-size: 50px;
+            color:white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            padding-left:20px;
+
+        }
+
+        #header-id{
+            text-align: center;
+        }
+
+    </style>
+</head>
+    <div class=header-div>
+     
+            <h2 id=header-id>Survey Form</h2>
+    
+    </div>
+  
+      <article >
+        <form action="mailto:someone@mail.com" method="post" enctype="text/plain"><label for="fname" style="margin-left:50px;">First name:</label>
+            
+            <!--Text partial-->
+            <input type="text" id="fname" name="Name" ><br><br>
+            <label for="lname" style="margin-left:50px;">Last name:</label>
+            <input type="text" id="lnname" name="Surname" ><br><br>
+            <label for="age" style="margin-left:50px;">Age: </label>
+            <input type="text" id="age" name="Age" ><br><br>
+            <!--Text partial-->
+
+            <!--ComboBox partial-->
+            <label for="roleLabel" style="margin-left:50px;">Which option best describes you ?</label><br><br>
+            <select name="role, ComboBox" id="role" >
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <!--Radio partial-->
+            <label for="radioFriend" style="margin-left:50px;">Are you want Learn Programming ?</label><br><br>
+            <label for="Yes" style="margin-left:50px;">Yes</label>
+            <input type="radio" id="yes" name="fav_language" value="Yes"><br><br>
+            <label for="No" style="margin-left:50px;">No</label>
+            <input type="radio" id="no" name="fav_language" value="No"><br><br>
+            <label for="Maybe" style="margin-left:50px;">Maybe</label>
+            <input type="radio" id="maybe" name="fav_language" value="Maybe"><br><br>
+            <!--Radio partial-->
+
+            <!--CheckBox partial-->
+            <label for="checkBoxLabel" style="margin-left:50px;">Languages and Frameworks known <small><b>(Check all that apply)</b></small></label><br><br>
+            <label for="programmingLanguages1" style="margin-left:50px;"><input type="checkbox" id="C Programming" name="C Programming">C</label><br><br>
+            <label for="programmingLanguages2" style="margin-left:50px;"><input type="checkbox" id="C++ Programming" name="C++ Programming">C++</label><br><br>
+            <label for="programmingLanguages3" style="margin-left:50px;"><input type="checkbox" id="C# Programming" name="C# Programming">C#</label><br><br>
+            <label for="programmingLanguages4" style="margin-left:50px;"><input type="checkbox" id="Java Programming" name="Java Programming">Java</label><br><br>
+            <label for="programmingLanguages5" style="margin-left:50px;"><input type="checkbox" id="Python Programming" name="Python Programming">Python</label><br><br>
+            <label for="programmingLanguages6" style="margin-left:50px;"><input type="checkbox" id="JavaScript Programming" name="JavaScript Programming">JavaScript</label><br><br>
+            <label for="programmingLanguages7" style="margin-left:50px;"><input type="checkbox" id="React Programming" name="React Programming">React</label><br><br>
+            <label for="programmingLanguages8" style="margin-left:50px;"><input type="checkbox" id="Angular Programming" name="Angular Programming">Angular</label><br><br>
+
+            <!--CheckBox partial-->
+
+            <!--Commnet partial-->
+            <label for="comment" style="margin-left:50px;"><b>Any comments or suggestions</b></label><br><br>
+            <textarea name="comment" id="comment" cols="50" rows="8"  placeholder="Enter your comment here"></textarea><br><br>
+            <!--Commnet partial-->
+
+            <button type="submit" value="submit"  id="button">
+                Submit
+            </button>
+
+        </form>
+      </article>
+
+
+      <footer>
+         <p class="pFooter">Survey Form</p>
+      </footer>
+  
+</body>
+</html>
